@@ -29,9 +29,6 @@ export const openai = new OpenAIApi(configuration);
 app.use("/openai", openAiRoutes);
 app.use("/auth", authRoutes);
 
-/* ROUTES CONFIGURATION */
-app.use("/openai", openAiRoutes);
-
 /* SERVER SETUP */
 const PORT = process.env.port || 9000;
 app.listen(PORT, () => {
